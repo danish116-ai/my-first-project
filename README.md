@@ -1,2 +1,3 @@
 # my-first-project
-My First Github respository
+Hello!My name is Danish.
+Iam learning GitHub and Python.
