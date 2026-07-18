@@ -1,0 +1,33 @@
+# Shopping Billing System
+
+total = 0
+
+while True:
+    print("\n===== SHOPPING BILLING SYSTEM =====")
+    print("1. Add Product")
+    print("2. Show Total Bill")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        product = input("Enter product name: ")
+        price = float(input("Enter product price: "))
+        quantity = int(input("Enter quantity: "))
+
+        bill = price * quantity
+        total += bill
+
+        print(f"{product} added successfully.")
+        print(f"Amount: ₹{bill}")
+
+    elif choice == "2":
+        print("\n===== FINAL BILL =====")
+        print(f"Total Amount: ₹{total}")
+
+    elif choice == "3":
+        print("Thank you for shopping!")
+        break
+
+    else:
+        print("Invalid Choice!"
